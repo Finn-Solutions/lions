@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Sen:regular,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w3aX8.ttf) format('truetype');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKjdSxYI9_3kvWI.ttf) format('truetype');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__J9CYI0vx.ttf) format('truetype');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__O9OYI0vx.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w3aXw.woff) format('woff');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKjdSxYI9_3kvWL.woff) format('woff');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__J9CYI0vy.woff) format('woff');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__O9OYI0vy.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w3aXo.woff2) format('woff2');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKjdSxYI9_3kvWN.woff2) format('woff2');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__J9CYI0v0.woff2) format('woff2');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__O9OYI0v0.woff2) format('woff2');}</style>
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <!-- <link rel="stylesheet" href="./CSS/styles.css" /> -->
+    <title>Devenir membre Leo</title>
+  </head>
+  <body>
+    <header style="margin-bottom: 3vw; " >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top justify-content-center">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              src="./images/projectLogo.png"
+              alt="project-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html" 
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./index.html#link-mot-du-gouverneur"
+                  >Mot du Gouverneur</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./index.html#zone"
+                  >Nos Zones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./index.html#nous-decouvrir"
+                  >Nous Découvrir</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./index.html#contactez-nous"
+                  >Nous Contacter</a
+                >
+              </li>
+              <li class="nav-item">
+                <div class="magazine">
+                  <a class="nav-link" href="./pdf-doc/Magazine du Mandat 2022-23 du Gouverneur Serge Ndayitabi I Lions Clubs International  I District 409 (1).pdf">Magazine</a>
+                    </div>
+                  </li>
+              <li class="nav-item dropdown">
+                <div id='google_translate_element'></div>
+                    <script>
+                    function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                    pageLanguage: 'un',
+                    autoDisplay: 'true',
+                    includedLanguages : 'en,fr',
+                    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+                    }, 'google_translate_element');
+                    }
+                    </script>
+                    <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>  
+              </li>
+                </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- ===========Devenir membre Leo   START HERE -->
+      <div class="devenir-membre-Leo">
+        <div class="logo-leo">
+          <img src="./images/Logo_rgb_Leo_2C-1.png" alt="leo-logo" />
+          <h3>Les Leos</h3>
+          <p>
+            «Leadership, Expérience, Opportunité.» C’est ce qui fait un Leo. En
+            tant que plus jeunes membres du Lions Clubs International, les Leos
+            incarnent les qualités les plus remarquables de notre organisation
+            de par leur engagement et leur conscience de la force de l’action.
+            Leos et Lions forment aujourd’hui un partenariat solide au sein
+            duquel les Lions bénéficient des perspectives innovantes des Leos,
+            et les Leos de stratégies éprouvées, au service du bien dans le
+            monde depuis des décennies.
+          </p>
+        </div>
+        <div class="leo-images-pages">
+          <img src="./images/Leo.jpeg" alt="">
+        </div>
+        <div class="devenir-membre-leo-content">
+          <h3>1 - Pourquoi devenir Leo ?</h3>
+          <p>
+            Il existe de nombreux moyens de donner en retour à sa collectivité,
+            et l’affiliation Leo est bien plus qu’une affaire de service. Se
+            joindre à un Leo club est une expérience enrichissante en tant
+            qu’individu et en tant que leader, au sein d’une famille mondiale de
+            jeunes qui rendent le monde meilleur. Si vous souhaitez rejoindre un
+            Leo club, utilisez le Localisateur de club pour en trouver un près
+            de chez vous.
+          </p>
+        </div>
+        <div class="devenir-membre-leo-content">
+          <h3>2 - Comment devenir Leo ?</h3>
+          <p>
+            Pour devenir membre Leo Assister à au moins deux (02) réunions consécutives du club de votre choix; Assister à deux (02) séances d’orientation proposé par le club; Participer à au moins une (01) activité / projet de sensibilisation ; Participer à la formation des nouveaux adhérents, organisée par la zone du club.
+          </p>
+        </div>
+        <div class="devenir-membre-leo-content">
+          <h3>3 - Avantages de l’affiliation Leos</h3>
+          <p>
+            Rejoindre un réseau pour le bien,mettre en action vos compétences de leader,accéder à un système de soutien global,faire l’expérience de l’esprit de service.
+          </p>
+        </div>
+      </div>
+      <!-- ===========Devenir membre Leo   ENDs  HERE -->
+    </main>
+   
+    <footer class="footer" style="overflow-x: hidden;">
+      <div class="container">
+        <div class="row">
+       <div class="footer-col">
+         <div class="footer-logo">
+          <a href="./index.html"><img src="./images/projectLogo.png" alt="leo-log" style="width: 90px;"></a>
+          </div>
+          </div>
+          <div class="footer-col">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="./index.html#link-mot-du-gouverneur">Mot du Gouverneur</a></li>
+              <li><a href="./index.html#zone">Nos Zones </a></li>
+              <li><a href="./index.html#nous-decouvrir">Nous Decouvrir</a></li>
+              <li><a href="./index.html#contactez-nous">Nous Contactez</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Nos Zones</h4>
+            <ul>
+              <li><a href="./index.html#zone">Zone Kinshasa</a></li>
+              <li><a href="./index.html#zone">Zone Kongo Central</a></li>
+              <li><a href="./index.html#zone">Zone Lubumbashi</a></li>
+              <li><a href="./index.html#zone">Zone Sud</a></li>
+              <li><a href="./index.html#zone">Zone Centre</a></li>
+              <li><a href="./index.html#zone">Zone Est</a></li>
+              <li><a href="./index.html#zone">Zone Nord</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Telephone</h4>
+            <ul>
+              <li><a href="#"><i class="fa fa-phone fa-lg"></i>+243813907272</a></li>
+              <li><a href="#"><i class="fa fa-phone fa-lg"></i>+243990260596</a></li>
+              <li><a href="#"><i class="fa fa-phone fa-lg"></i>+243897775922</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Email</h4>
+            <ul>
+              <li><a href="mailto:info@lions-d409.org " style="text-transform: lowercase"><i class="fa fa-envelope-o fa-lg"></i> info@lions-d409.org </a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-logo">
+              <a href="./index.html"><img  id="last-footer-logo"src="./images/projectLogo.png" alt="leo-log" style="width: 90px;margin-top: 0px;"></a>
+            </div>
+        </div>
+        </div>
+      </div> 
+    
+      <div class="copyright"> <hr> &copy; Copyright 2022 Lions Club District 409</div>
+    </footer>
+    <script src="./Js/languageScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+  </body>
+</html>

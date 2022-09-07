@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+    />
+    <style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Sen:regular,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w3aX8.ttf) format('truetype');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKjdSxYI9_3kvWI.ttf) format('truetype');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__J9CYI0vx.ttf) format('truetype');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__O9OYI0vx.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXZ0oA.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w3aXw.woff) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w3aXw.woff) format('woff');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKjdSxYI9_3kvWL.woff) format('woff');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__J9CYI0vy.woff) format('woff');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__O9OYI0vy.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w3aXo.woff2) format('woff2');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKjdSxYI9_3kvWN.woff2) format('woff2');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__J9CYI0v0.woff2) format('woff2');}@font-face {font-family: 'Sen';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__O9OYI0v0.woff2) format('woff2');}</style>
+    <link
+        rel="stylesheet"
+        href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <!-- <link rel="stylesheet" href="./CSS/styles.css" /> -->
+</head>
+<body>
+    <header style="margin-bottom: 3vw; " >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top justify-content-center">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"
+              ><img
+                src="./images/projectLogo.png"
+                alt="project-logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html" 
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="./index.html#link-mot-du-gouverneur"
+                    >Mot du Gouverneur</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="./index.html#zone"
+                    >Nos Zones</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="./index.html#nous-decouvrir"
+                    >Nous Découvrir</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="./index.html#contactez-nous"
+                    >Nous Contacter</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <div class="magazine">
+                    <a class="nav-link" href="./pdf-doc/Magazine du Mandat 2022-23 du Gouverneur Serge Ndayitabi I Lions Clubs International  I District 409 (1).pdf">Magazine</a>
+                      </div>
+                    </li>
+                <li class="nav-item dropdown">
+                  <div id='google_translate_element'></div>
+                      <script>
+                      function googleTranslateElementInit() {
+                      new google.translate.TranslateElement({
+                      pageLanguage: 'un',
+                      autoDisplay: 'true',
+                      includedLanguages : 'en,fr',
+                      layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+                      }, 'google_translate_element');
+                      }
+                      </script>
+                      <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>  
+                </li>
+                  </ul>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="globalCouses-banner">
+            <div class="global-couses-inner-banner">
+              <div id="banner-global-item1">
+                <h3>Nos Causes Mondiales</h3>
+              </div>
+              <div id="banner-global-item2">
+                <img
+                  src="./images/global-banner.jpeg"
+                  alt="global-banner"
+                  
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="global-couses-description">
+            <p>
+              Chaque voyage commence par un simple pas. Un acte de service, un mot d’encouragement, un geste généreux suffit souvent à redonner espoir aux plus démunis.</p> <br>
+            <p>Depuis 100 ans, la générosité des Lions et des Leos s’est multipliée au-delà des frontières, des océans et des continents. Avec aujourd’hui plus de 1,4 million de membres, nous pouvons faire une vraie différence dans le monde.
+               C’est pourquoi nous concentrons notre action sur cinq domaines de service prioritaires. Ces causes mondiales posent des défis importants pour l’humanité et nous pensons qu’il nous revient aujourd’hui d’y faire face. <br>
+            </p>
+          </div>
+
+          <div class="global-couses-content">
+            <div class="hunger-section">
+              <img
+                src="./images/LCI_CauseArea_Icons_01a-hunger.png"
+                alt="hunger-image"
+              />
+              <h3>FAIM</h3>
+              <p>
+                Les Lions et les Leos œuvrent pour l’épanouissement de l’être humain et savent le lourd impact de la faim et de la malnutrition dans le monde. Nous estimons que l’amélioration d’une collectivité dépend de l’épanouissement de ses membres.
+              </p>
+              <a href="./pdf-doc/Faim.pdf" target="_blank">Lire Plus</a>
+            </div>
+            <div class="diabetes-section">
+              <img
+                src="./images/LCI_CauseArea_Icons_01a-diabetes.png"
+                alt="diabetes-image"
+              />
+              <h3>DIABETES</h3>
+              <p>
+                Avec le soutien de la Fondation du Lions Clubs International (LCIF), les Lions agissent pour réduire la prévalence du diabète et améliorer la vie des personnes diabétiques.
+              </p>
+              <a href="./pdf-doc/Diabete.pdf" target="_blank">Lire Plus</a>
+            </div>
+            <div class="child-cancer-section">
+              <img
+                src="./images/LCI_CauseArea_Icons_01a-childhoodcancer.png"
+                alt="child-cancer-image"
+              />
+              <h3>CANCER INFANTILE</h3>
+              <p>
+                Notre action vise à apporter une réponse aux besoins des enfants atteints de cancer et de leurs familles par le biais d'activités de service à fort impact.
+              </p>
+              <a href="./pdf-doc/Cancer_infantile.pdf" target="_blank">Lire Plus</a>
+            </div>
+            <div class="Vision-section">
+              <img src="./images/vision-modified.png" alt="vision-eye-image" />
+              <h3>VUE</h3>
+              <p>
+                Notre action vise à prévenir la cécité évitable et améliorer la qualité de vie des aveugles et des malvoyants.
+              </p>
+              <a href="./pdf-doc/Vue.pdf" target="_blank">Lire Plus</a>
+            </div>
+            <div class="Enviroment-section">
+              <img
+                src="./images/LCI_CauseArea_Icons_01a-environment.png"
+                alt="vision-eye-image"
+              />
+              <h3>ENVIRONNEMENT</h3>
+              <p>
+                Notre action vise à protéger et restaurer durablement la qualité de notre environnement pour améliorer le bien-être de tous.
+              </p>
+              <a href="./pdf-doc/Environnement.pdf" target="_blank">Lire Plus</a>
+            </div>
+            <div class="Youth-section">
+              <img src="./images/LCIF Icon - Youth.png" alt="vision-eye-image" />
+              <h3>JEUNESSE</h3>
+              <p>
+                Les jeunes sont une force dynamique pour le bien. Après plus d’un siècle de service, nous restons plus que jamais engagés à maintenir notre impact au cours des cent prochaines années. C’est pour cela que nous investissons dans les jeunes en tant que bénéficiaires, partenaires, et pour leur donner les moyens d’être des leaders de service.
+              </p>
+              <a href="./pdf-doc/Jeunesse.pdf">Lire Plus</a>
+            </div>
+            <div class="Humanitarian-section">
+              <img
+                src="./images/LCIF Icon - Humanitarian Efforts.png"
+                alt="vision-eye-image"
+              />
+              <h3>HUMANITAIRE</h3>
+              <p>
+                Les actions humanitaires des Lions sont remarquables et célébrées depuis plus de 100 ans. Les Lions identifient les besoins mondiaux les plus urgents et la LCIF soutient financièrement leurs actions humanitaires transformatrices à travers le monde.
+              </p>
+              <a href="./pdf-doc/Humanitaire.pdf" target="_blank">Lire Plus</a>
+            </div>
+            <div class="disaster-section">
+              <img
+                src="./images/LCIF Icon - Disaster Relief.png"
+                alt="vision-eye-image"
+              />
+              <h3>AIDE EN CAS DE CATASTROPHE</h3>
+              <p>
+                Les Lions et la LCIF sont souvent parmi les premiers à apporter leur aide quand les catastrophes frappent le monde. La LCIF est prête à financer les initiatives d’urgence par ses programmes d’aide en cas de catastrophe.
+              </p>
+              <a href="./pdf-doc/Aide-en-cas-de-catastrophe.jpg.pdf" target="_blank">Lire Plus</a>
+            </div>
+          </div>
+      </main>
+      <footer class="footer" style="overflow-x: hidden;">
+        <div class="container">
+          <div class="row">
+         <div class="footer-col">
+           <div class="footer-logo">
+            <a href="./index.html"><img src="./images/projectLogo.png" alt="leo-log" style="width: 90px;"></a>
+            </div>
+            </div>
+            <div class="footer-col">
+              <h4>Menu</h4>
+              <ul>
+                <li><a href="./index.html#link-mot-du-gouverneur">Mot du Gouverneur</a></li>
+                <li><a href="./index.html#zone">Nos Zones </a></li>
+                <li><a href="./index.html#nous-decouvrir">Nous Decouvrir</a></li>
+                <li><a href="./index.html#contactez-nous">Nous Contactez</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Nos Zones</h4>
+              <ul>
+                <li><a href="./index.html#zone">Zone Kinshasa</a></li>
+                <li><a href="./index.html#zone">Zone Kongo Central</a></li>
+                <li><a href="./index.html#zone">Zone Lubumbashi</a></li>
+                <li><a href="./index.html#zone">Zone Sud</a></li>
+                <li><a href="./index.html#zone">Zone Centre</a></li>
+                <li><a href="./index.html#zone">Zone Est</a></li>
+                <li><a href="./index.html#zone">Zone Nord</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Telephone</h4>
+              <ul>
+                <li><a href="#"><i class="fa fa-phone fa-lg"></i>+243813907272</a></li>
+                <li><a href="#"><i class="fa fa-phone fa-lg"></i>+243990260596</a></li>
+                <li><a href="#"><i class="fa fa-phone fa-lg"></i>+243897775922</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Email</h4>
+              <ul>
+                <li><a href="mailto:info@lions-d409.org " style="text-transform: lowercase"><i class="fa fa-envelope-o fa-lg"></i> info@lions-d409.org </a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <div class="footer-logo">
+                <a href="./index.html"><img id="last-footer-logo" src="./images/projectLogo.png" alt="leo-log" style="width: 90px;margin-top: 0px;"></a>
+              </div>
+          </div>
+          </div>
+        </div> 
+      
+        <div class="copyright"> <hr> &copy; Copyright 2022 Lions Club District 409</div>
+      </footer>
+    
+</body>
+</html>
